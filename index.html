@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radu Mutilic&#259;</title>
+    <link rel="stylesheet" href="resources/mutilica.com.css">
+</head>
+
+<body>
+<div class='centered'>
+    <div>
+        <h1>Radu Mutilic&#259;</h1>
+        <div class="avatar-container">
+            <img id="me" src="resources/me.jpg" alt="Me">
+        </div>
+        <p>Hi, I'm a software engineer.</p>
+        <p>This is my <a href="https://registry.jsonresume.org/radu-mutilica">CV</a>.</p>
+        <p id="email-placeholder"></p>
+        <noscript>Sorry, you need Javascript on to email me.</noscript>
+        <hr>
+        <div id="links">
+            <a href="https://github.com/radu-mutilica">GitHub</a>
+            <a href="https://linkedin.com/in/radu-mutilica">LinkedIn</a>
+            <a href="https://soundcloud.com/radu-mutilica">My Music</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+<script src="resources/mutilica.com.js"></script>
+<script>
+    const emailAddr = generate_email();
+    document.getElementById('email-placeholder').innerHTML =
+        "Get in touch at <a href='mailto:" + emailAddr + "'>" + emailAddr + "</a>";
+</script>
