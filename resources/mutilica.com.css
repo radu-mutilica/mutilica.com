@@ -35,7 +35,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg: #212121;
+        --bg: radial-gradient(circle, rgb(30 30 30) 0%, rgba(20,20,20,1) 100%);
         --accent-bg: #2b2b2b;
         --text: #dcdcdc;
         --text-light: #ababab;
