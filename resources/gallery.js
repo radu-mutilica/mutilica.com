@@ -1,8 +1,12 @@
 // Get list of images from AWS
-const photosListURL = "https://mutilica.com-photo-gallery.s3.eu-west-2.amazonaws.com/photos.json";
+const photosListURL = "https://mutilica-photo-gallery.s3.eu-west-2.amazonaws.com/photos.json";
 
 const buildGallery = async function () {
-    fetch(photosListURL, {mode: 'cors'})
+    fetch(photosListURL, {
+        method: "GET",
+        mode: 'cors',
+        headers: {}
+    })
         .then(res => res.json())
         .then((photos) => {
 
@@ -25,7 +29,7 @@ const buildGallery = async function () {
                 gallery.appendChild(newLink);
             }
             console.log("Finished building gallery...")
-            var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
+            new SimpleLightbox('.gallery a', {});
             return photos;
         }).catch(err => console.error(err));
 }
