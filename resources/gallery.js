@@ -2,7 +2,7 @@
 const photosListURL = "https://mutilica.com-photo-gallery.s3.eu-west-2.amazonaws.com/photos.json";
 
 const buildGallery = async function () {
-    fetch(photosListURL)
+    fetch(photosListURL, {mode: 'cors'})
         .then(res => res.json())
         .then((photos) => {
 
