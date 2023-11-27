@@ -1,41 +1,101 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
     <title>Radu Mutilic&#259;</title>
-    <link rel="icon" type="image/x-icon" href="resources/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="resources/favicon.ico"></head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="resources/mutilica.com.css">
-</head>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
 
 <body>
-<div class='centered'>
-    <div>
-        <h1>Radu Mutilic&#259;</h1>
-        <div class="avatar-container">
-            <img id="me" src="resources/me.jpg" alt="Me">
-        </div>
-        <p>Hi, I'm a software engineer.</p>
-        <p>This is my <a href="https://registry.jsonresume.org/radu-mutilica">CV</a>.</p>
-        <p id="email-placeholder"></p>
-        <noscript>Sorry, you need Javascript on to email me.</noscript>
-        <hr>
-        <div id="links">
-            <a href="https://github.com/radu-mutilica">GitHub</a>
-            <a href="https://linkedin.com/in/radu-mutilica">LinkedIn</a>
-            <a href="https://soundcloud.com/radu-mutilica">My Music</a>
-            <a href="gallery.html">My Photos</a>
-        </div>
-    </div>
-</div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Radu Mutilic&#259;</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">home <span class="sr-only">(current)</span></a></li>
+              <li><a href="https://registry.jsonresume.org/radu-mutilica">résumé</a></li>
+              <li><a href="https://github.com/radu-mutilica">github</a></li>
+              <li><a href="https://linkedin.com/in/radu-mutilica">linkedin</a></li>
+              <li><a href="https://soundcloud.com/radu-mutilica">my music</a></li>
+              <li><a href="gallery.html">my photography</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="avatar-container">
+                    <img id="me-img" class="shadow" src="resources/me-bw.jpg" alt="Me">    
+                </div>
+                <div class="skills-container">
+                    <span class="label label-default label-main">Python</span>
+                    <span class="label label-default label-main">Django / Flask</span>
+                    <span class="label label-default label-main">MongoDB</span>
+                    <span class="label label-default label-main">scheduling systems</span>
+                    <span class="label label-default label-main">queues</span>
+                    <span class="label label-default label-main">concurrency</span>
+                    <span class="label label-default label-main">distributed tasks</span>
+                    <span class="label label-default label-main">Bash</span>
+                    <span class="label label-default label-mid">AWS</span>
+                    <span class="label label-default label-mid">PostgreSQL</span>
+                    <span class="label label-default label-mid">Pandas / Numpy</span>
+                    <span class="label label-default label-misc">ELK</span>
+                    <span class="label label-default label-misc">InfluxDB</span>
+                    <span class="label label-default label-misc">Redis</span>
+                    <span class="label label-default label-misc">Docker / K8s</span>
+                    <span class="label label-default label-misc">ReactJS</span>
+                </div>
+
+            </div>
+            <div class="col-sm-8">
+                <div class="summary-container">
+                    <h3>👋 Hey there! I'm <b>Radu</b></h3>
+                    <p>I'm a seasoned software developer with nearly a decade of experience in crafting robust <b>backend solutions</b>, <b>project management</b>, schooled in the esoteric arts of <b>site reliability engineering</b> and with a passion for tinkering with <b>distributed systems</b>.</p>
+                    <p>I thrive on turning complex ideas into simple, elegant and scalable software solutions. Whether it's designing and architecting systems from the ground up, redeveloping and migrating legacy projects, deploying to cloud/on-premise or orchestrating seamless automation, I'm keen on building technology that just works, is easy to maintain and monitor and, most importantly, doesn't get in the way of the end user.</p>
+                    <p>After 9 years spent studying, living and working in the UK, in both corporate and startup environments, I've decided to embark on the path of a fully remote developer, setting my home base back in Romania and offering my software developer and consultancy services. </p>
+                    <h3>🤝 Let's Connect</h3>
+                    <p>If you're as passionate about technology as I am, or if you have a project that could benefit from my skills, let's connect! Feel free to drop me an <a id="email-placeholder" href="mailto:someone@example.com">email</a> or message on <a href="https://linkedin.com/in/radu-mutilica">LinkedIn</a>. I'm always up for a new challenge.</p>
+                    <p><i>Cheers!</i></p>
+                    <noscript>Sorry, you need Javascript on to email me.</noscript>
+                </div>
+            </div>
+      </div>
+      <hr>
+      </div>
+      
 </body>
 </html>
 
-
 <script src="resources/mutilica.com.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script>
     const emailAddr = generate_email();
-    document.getElementById('email-placeholder').innerHTML =
-        "Get in touch at <a href='mailto:" + emailAddr + "'>" + emailAddr + "</a>";
+    document.getElementById('email-placeholder').href = "mailto:" + emailAddr;
 </script>
